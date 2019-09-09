@@ -1,0 +1,43 @@
+html, body {
+ margin: 0;
+ overflow: hidden
+}
+
+
+.div2 {
+	height: 900px;
+	 width: 100%;
+	 background-image: url("images/bg2.jpg");
+ 	 background-repeat: no-repeat;
+ 	 background-size: 100%;
+ 	 filter: blur(2px);
+     -webkit-filter: blur(2px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  font-family: "MLP - Magic is Friendship"; src: url("fonts/MLP_Small.ttf");
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.text {
+	font-family: "Celestia Redux"; src: url("fonts/CMR.ttf");
+	font-size: 15pt;
+}

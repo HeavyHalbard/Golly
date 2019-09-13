@@ -1,17 +1,19 @@
 html, body {
- margin: 0;
- overflow: hidden
+  height: 100%;
+  margin: 0;
 }
 
 
 .div2 {
-	height: 900px;
-	 width: 100%;
-	 background-image: url("images/bg2.jpg");
- 	 background-repeat: no-repeat;
- 	 background-size: 100%;
- 	 filter: blur(2px);
-     -webkit-filter: blur(2px);
+	background-image: url("images/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100%; 
+
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 * {

@@ -1,25 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>Tribute</title>
 	<link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="height: 100%;">
 	
-	<div class="div2"></div>
-	<div class="bg-text">
-		<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img src="images/golly.png" style="float: left; width: 300px; height: auto;"></a>
-  		<h1 style="font-size: 60pt;">Rest In Peace</h1>
-  		<p class="text" style="font-size: 30pt;">Cozy Glow</p>
-  		<p class="text" style="font-size: 20pt;">2018-2019 </p>
-  		<span style="font-family: arial; font-style: italic; font-size: 10pt;">Play music to pay for respects.</span><br>
-  		<audio src="audio/music.opus" controls autoplay loop></audio>
+	<!-- Navigation bar -->
+	<div class="topnav" id="myTopnav">
+  		<a href="index.html" class="active"><b>GOLLY</b></a>
+  		<a href="history.html"><b>History</b></a>
+  		<a href="honors.html"><b>Memorial</b></a>
+  		<a href="about.html"><b>About</b></a>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+   		 <i class="fa fa-bars"></i>
+  		</a>
+	</div>
+	<script>
+		function myFunction() {
+  			var x = document.getElementById("myTopnav");
+  			if (x.className === "topnav") {
+   				 x.className += " responsive";
+  			} else {
+   				 x.className = "topnav";
+  			}
+		}
+	</script>
+
+	<!-- CONTENT -->
+	<div class="index_container">
+		<div class="rip_block">
+			<div>
+				<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img src="images/golly.png" class="rip_image"></a> <!-- Rickroll -->
+			</div>
+			<div class="rip_desc">
+				<h1 class="rip_textA">Rest In Peace</h1>
+  				<p class="rip_textB">Cozy Glow</p>  
+  				<p class="rip_textC">2018-2019</p>
+  				<span class="rip_textD">Play music to pay for respects.</span><br>
+  				<audio src="audio/music.opus" controls autoplay loop></audio>
+			</div>
+		</div>
 	</div>
 
-	</div>
 </body>
 </html>
